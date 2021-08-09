@@ -4,7 +4,7 @@
 
 #
 echo "1. Install latest Node.JS"
-node_download_dir="/home/pi/Downloads"
+node_download_dir="/home/pi/Downloads/node-download"
 node_download_url="https://nodejs.org/dist/v14.17.4/node-v14.17.4-linux-armv7l.tar.xz"
 sudo mkdir -p $node_download_dir
 cd $node_download_dir
