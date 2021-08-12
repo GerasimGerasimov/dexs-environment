@@ -20,3 +20,10 @@ cd Tagger
 sudo npm install
 sudo npm run build
 cd ..
+echo ""
+echo "4) Static Files HTTP-Server"
+sudo git clone https://github.com/GerasimGerasimov/StaticFilesServer.git
+cd StaticFilesServer
+sudo npm install
+sudo npm run build
+cd ..
