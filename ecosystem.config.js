@@ -1,8 +1,8 @@
 module.exports = {
   apps : [{
     name: 'SerialService',
-    script: './SerialportService/dist/index.js',
-    args: './SerialportService/config.json',
+    script: './services/SerialportsService/dist/index.js',
+    args: './services/SerialportsService/config.json',
     instances: 1,
     source_map_support: true,
     autorestart: true,
@@ -17,8 +17,8 @@ module.exports = {
   },
   {
     name: 'SlotsService',
-    script: './SlotsService/dist/index.js',
-    args: './SlotsService/config.json',
+    script: './services/SlotsService/dist/index.js',
+    args: './services/SlotsService/config.json',
     instances: 1,
     source_map_support: true,
     autorestart: true,
@@ -33,7 +33,7 @@ module.exports = {
   },
   {
     name: 'Tagger',
-    script: './Tagger/dist/index.js',
+    script: './services/Tagger/dist/index.js',
     args: '',
     instances: 1,
     source_map_support: true,
@@ -49,7 +49,7 @@ module.exports = {
   },
   {
     name: 'ServerHTTP',
-    script: './server/index.js',
+    script: './services/server/index.js',
     args: '',
     instances: 1,
     source_map_support: true,
