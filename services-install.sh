@@ -6,3 +6,17 @@ cd SerialportsService
 sudo npm install
 sudo npm run build
 cd ..
+echo ""
+echo "2) Install SlotsService"
+sudo git clone https://github.com/GerasimGerasimov/SlotsService.git
+cd SlotsService
+sudo npm install
+sudo npm run build
+cd ..
+echo ""
+echo "3) Tagger"
+sudo git clone https://github.com/GerasimGerasimov/Tagger.git
+cd Tagger
+sudo npm install
+sudo npm run build
+cd ..
