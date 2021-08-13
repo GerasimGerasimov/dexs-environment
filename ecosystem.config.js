@@ -49,7 +49,7 @@ module.exports = {
   },
   {
     name: 'ServerHTTP',
-    script: './services/server/index.js',
+    script: './services/StaticFilesServer/index.js',
     args: '',
     instances: 1,
     source_map_support: true,
