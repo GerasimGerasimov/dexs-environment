@@ -50,7 +50,7 @@ module.exports = {
   {
     name: 'ServerHTTP',
     script: './services/StaticFilesServer/index.js',
-    args: '',
+    args: '4000 /usr/DExS/frontend',
     instances: 1,
     source_map_support: true,
     autorestart: true,
