@@ -1,0 +1,12 @@
+#при устновке окружения, скопировать в директорию
+#/etc/xdg/lxsession/LXDE-pi/
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#отключаю скрин-сейвер
+#@xscreensaver -no-splash
+#отключаю гашение экрана при бездействии
+@xset s off
+@xset -dpms
+@xset s noblank
+#запускаю свои сервисы и браузер
+@/usr/DExS/services-start.sh
