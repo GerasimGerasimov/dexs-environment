@@ -44,4 +44,10 @@ sudo chmod +x ./services-start.sh
 echo "5. Autostart setings"
 cp -r autostart /etc/xdg/lxsession/LXDE-pi/
 
+#
+echo "Install services"
+./app-create-folders.sh
+./services-install.sh
+./services-prepare.sh
+
 echo "DONE!"
