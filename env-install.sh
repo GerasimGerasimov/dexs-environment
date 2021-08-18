@@ -33,6 +33,7 @@ echo PM2 Version: $(pm2 --version) installed
 
 #
 echo "4. Make all *.sh files executable"
+cd $mydir
 sudo chmod +x ./app-create-folders.sh
 sudo chmod +x ./services-install.sh
 sudo chmod +x ./services-start.sh
