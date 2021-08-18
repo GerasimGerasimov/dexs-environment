@@ -2,6 +2,7 @@
 #echo "install mc"
 #sudo apt-get install mc
 
+starting_dir=$(pwd)
 #
 echo "1. Install latest Node.JS"
 node_download_dir="/home/pi/Downloads/node-download"
@@ -33,7 +34,7 @@ echo PM2 Version: $(pm2 --version) installed
 
 #
 echo "4. Make all *.sh files executable"
-cd $mydir
+cd $starting_dir
 sudo chmod +x ./app-create-folders.sh
 sudo chmod +x ./services-install.sh
 sudo chmod +x ./services-start.sh
