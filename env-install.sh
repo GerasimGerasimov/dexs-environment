@@ -37,7 +37,7 @@ echo "4. Make all *.sh files executable"
 cd $starting_dir
 sudo chmod +x ./app-create-folders.sh
 sudo chmod +x ./services-install.sh
+sudo chmod +x ./services-prepare.sh
 sudo chmod +x ./services-start.sh
-
 #
 echo "DONE!"
