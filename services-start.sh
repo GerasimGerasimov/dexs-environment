@@ -1,6 +1,6 @@
 #!/bin/bash
-app_dir=$(pwd)
-echo "app_dir: $app_dir"
+#указываю рабочую директорию
+cd /usr/DExS/
 
 echo -e "\033[33m Stop all services..."
 sudo pm2 kill
