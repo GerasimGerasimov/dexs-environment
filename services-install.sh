@@ -28,3 +28,17 @@ sudo npm install
 #StaticFilesServer сразу на JS, его на надо компилировать
 #sudo npm run build 
 cd ..
+echo ""
+echo "5) event-logger-service"
+sudo git clone https://github.com/GerasimGerasimov/event-logger-service.git
+cd event-logger-service
+sudo npm install
+sudo npm run build
+cd ..
+echo ""
+echo "6) events-log-reader"
+sudo git clone https://github.com/GerasimGerasimov/events-log-reader.git
+cd events-log-reader
+sudo npm install
+sudo npm run build
+cd ..
