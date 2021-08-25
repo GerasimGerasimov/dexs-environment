@@ -62,12 +62,43 @@ module.exports = {
     env_production: {
       NODE_ENV: 'production'
     }
+  },
+  {
+    name: 'event-logger-service',
+    script: './services/event-logger-service/dist/index.js',
+    instances: 1,
+    source_map_support: true,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+    env: {
+      NODE_ENV: 'development'
+    },
+    env_production: {
+      NODE_ENV: 'production'
+    }
+  },
+  {
+    name: 'events-log-reader',
+    script: './services/events-log-reader/dist/index.js',
+    args: './services/events-log-reader/config.json',
+    instances: 1,
+    source_map_support: true,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+    env: {
+      NODE_ENV: 'development'
+    },
+    env_production: {
+      NODE_ENV: 'production'
+    }
   }],
 
   deploy : {
     production : {
       user : 'node',
-      host : '212.83.163.1',
+      host : '192.168.1.100',
       ref  : 'origin/master',
       repo : 'git@github.com:repo.git',
       path : '/var/www/production',
