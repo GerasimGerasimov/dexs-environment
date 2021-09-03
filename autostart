@@ -2,8 +2,8 @@
 #/etc/xdg/lxsession/LXDE-pi/
 
 #отключаю LXDE
-#@lxpanel --profile LXDE-pi
-#@pcmanfm --desktop --profile LXDE-pi
+#@lxpanel --profile LXDE-pi #графическая оболочка
+#@pcmanfm --desktop --profile LXDE-pi #графический файловый менеджер
 
 #отключаю скрин-сейвер
 #@xscreensaver -no-splash
