@@ -42,3 +42,11 @@ cd events-log-reader
 sudo npm install
 sudo npm run build
 cd ..
+echo ""
+echo "7) dexop-system-services"
+sudo git clone https://github.com/GerasimGerasimov/dexop-system-services.git
+cd dexop-system-services/backend/
+sudo npm install
+sudo npm run build
+cd ..
+cd ..
