@@ -93,8 +93,23 @@ module.exports = {
     env_production: {
       NODE_ENV: 'production'
     }
+  },
+  {
+    name: 'system-services',
+    script: './services/dexop-system-services/backend/dist/index.js',
+    args: '5011',
+    instances: 1,
+    source_map_support: true,
+    autorestart: true,
+    watch: false,
+    max_memory_restart: '1G',
+    env: {
+      NODE_ENV: 'development'
+    },
+    env_production: {
+      NODE_ENV: 'production'
+    }
   }],
-
   deploy : {
     production : {
       user : 'node',
