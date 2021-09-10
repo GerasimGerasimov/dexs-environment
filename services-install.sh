@@ -52,5 +52,5 @@ sudo npm run build
 echo ""
 echo "8) установка конфигурации"
 cd /usr/DExS
-suno git clone https://github.com/GerasimGerasimov/dexs-gen-configuration.git
+sudo git clone https://github.com/GerasimGerasimov/dexs-gen-configuration.git
 #это простое копирование папок и файлов с github
