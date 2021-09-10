@@ -34,7 +34,7 @@ module.exports = {
   {
     name: 'Tagger',
     script: './services/Tagger/dist/index.js',
-    args: './dexs-gen-configuration/Tagger/',
+    args: './dexs-gen-configuration/Tagger/ 5004',
     instances: 1,
     source_map_support: true,
     autorestart: true,
