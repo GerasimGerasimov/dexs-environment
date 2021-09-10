@@ -2,7 +2,7 @@ module.exports = {
   apps : [{
     name: 'SerialService',
     script: './services/SerialportsService/dist/index.js',
-    args: './services/SerialportsService/config.json',
+    args: './dexs-gen-configuration/Serial-ttyAMA0/config.json',
     instances: 1,
     source_map_support: true,
     autorestart: true,
@@ -18,7 +18,7 @@ module.exports = {
   {
     name: 'SlotsService',
     script: './services/SlotsService/dist/index.js',
-    args: './services/SlotsService/config.json',
+    args: './dexs-gen-configuration/SlotsSrv-ttyAMA0/config.json',
     instances: 1,
     source_map_support: true,
     autorestart: true,
@@ -34,7 +34,7 @@ module.exports = {
   {
     name: 'Tagger',
     script: './services/Tagger/dist/index.js',
-    args: '',
+    args: './dexs-gen-configuration/Tagger/',
     instances: 1,
     source_map_support: true,
     autorestart: true,
@@ -81,7 +81,7 @@ module.exports = {
   {
     name: 'events-log-reader',
     script: './services/events-log-reader/dist/index.js',
-    args: './services/events-log-reader/config.json',
+    args: './dexs-gen-configuration/events-log-reader/config.json',
     instances: 1,
     source_map_support: true,
     autorestart: true,
