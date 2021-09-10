@@ -3,7 +3,7 @@
 
 #отключаю LXDE
 #@lxpanel --profile LXDE-pi #графическая оболочка
-#@pcmanfm --desktop --profile LXDE-pi #графический файловый менеджер
+@pcmanfm --desktop --profile LXDE-pi #графический файловый менеджер
 
 #отключаю скрин-сейвер
 #@xscreensaver -no-splash
