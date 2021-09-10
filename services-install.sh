@@ -48,5 +48,9 @@ sudo git clone https://github.com/GerasimGerasimov/dexop-system-services.git
 cd dexop-system-services/backend/
 sudo npm install
 sudo npm run build
-cd ..
-cd ..
+#
+echo ""
+echo "8) установка конфигурации"
+cd /usr/DExS
+suno git clone https://github.com/GerasimGerasimov/dexs-gen-configuration.git
+#это простое копирование папок и файлов с github
