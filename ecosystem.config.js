@@ -66,7 +66,7 @@ module.exports = {
   {
     name: 'event-logger-service',
     script: './services/event-logger-service/dist/index.js',
-    args: './dexs-gen-configuration/event-logger-service/config.json',
+    args: '../../dexs-gen-configuration/event-logger-service',
     instances: 1,
     source_map_support: true,
     autorestart: true,
